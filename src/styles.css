@@ -1,0 +1,126 @@
+/* #root {
+  margin: 100px auto;
+  max-width: 500px;
+  padding-bottom: 100px;
+} */
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0 0 1px hsl(0deg 0% 0% / 0.075), 0 0 2px hsl(0deg 0% 0% / 0.075),
+    0 0 4px hsl(0deg 0% 0% / 0.075), 0 0 8px hsl(0deg 0% 0% / 0.075),
+    0 0 16px hsl(0deg 0% 0% / 0.075);
+  transform-origin: 10% 60%;
+  overflow: hidden;
+}
+
+
+
+.card-container {
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 250px;
+}
+
+
+
+.left-side {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  /* height: 100%; */
+  /* background-color: #f0f0f0; */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.right-side {
+  width: 700px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.styled-div {
+  box-shadow: 0 4px 8px rgba(131, 129, 129, 0.9);
+  border-radius: 20px;
+  /* background-color: red; */
+  height: 550px;
+  width: 300px;
+  margin-right: 200px;
+  /* Add any additional styles as needed */
+}
+
+.splash {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  clip-path: path(
+    "M 0 303.5 C 0 292.454 8.995 285.101 20 283.5 L 460 219.5 C 470.085 218.033 480 228.454 480 239.5 L 500 430 C 500 441.046 491.046 450 480 450 L 20 450 C 8.954 450 0 441.046 0 430 Z"
+  );
+}
+
+
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  overflow: hidden !important;
+  z-index: -1;
+  padding-bottom: 0;
+}
+
+.small-image1,
+.small-image5 {
+  width: 60px; /* Smaller width for the 1st and 5th images */
+  height: 150px; /* Smaller height for the 1st and 5th images */
+}
+
+.small-image2,
+.small-image4 {
+  width: 90px; /* Slightly bigger width for the 2nd and 4th images */
+  height: 200px; /* Slightly bigger height for the 2nd and 4th images */
+}
+
+.large-image {
+  width: 120px; /* Larger width for the middle image */
+  height: 250px; /* Larger height for the middle image */
+  z-index: 999;
+  position: relative;
+}
+
+.small-image1 {
+  margin-right: -20px; /* Adjust the margin as needed */
+}
+
+.small-image2 {
+  margin-right: -30px; /* Adjust the margin as needed */
+}
+
+.small-image4 {
+  margin-left: -30px;
+  z-index: 1;
+}
+
+.small-image5 {
+  margin-left: -20px; /* Adjust the margin as needed */
+}
+
