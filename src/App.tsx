@@ -5,9 +5,6 @@ import pinkbanner from './img/pinkbanner.jpeg';
 import Middle from "./Middle.tsx";
 
 
-interface Props {
-  emoji: string;
-}
 
 const cardVariants: Variants = {
   offscreen: {
@@ -17,7 +14,7 @@ const cardVariants: Variants = {
   },
   onscreen: (index: number) => ({
     y: 0,
-    scale: index === 2 ? 4 : 3,
+    scale: 3,
     transition: {
       type: "spring",
       bounce: 0.2,
@@ -85,26 +82,31 @@ export default function App() {
             src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/neopop-left-1.png"
             alt="Card"
             className="small-image1"
+            style={{ maxWidth: "100%" }}
           />
           <img
             src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/neopop-left-1.png"
             alt="Card"
             className="small-image2"
+            style={{ maxWidth: "100%" }}
           />
           <img
             src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/neopop-left-1.png"
             alt="Card"
             className="large-image"
+            style={{ maxWidth: "100%" }}
           />
           <img
             src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/neopop-left-1.png"
             alt="Card"
             className="small-image4"
+            style={{ maxWidth: "100%" }}
           />
           <img
             src="https://web-images.credcdn.in/_next/assets/images/home-page/phone/neopop-left-1.png"
             alt="Card"
             className="small-image5"
+            style={{ maxWidth: "100%" }}
           />
         </motion.div>
       </motion.div>
@@ -119,7 +121,11 @@ export default function App() {
           justifyContent: "center",
         }}
       >
-        <img src={pinkbanner} style={{ width: "100%", height: "90%" }} />
+        <img
+          src={pinkbanner}
+          alt="banner"
+          style={{ width: "100%", height: "90%" }}
+        />
       </div>
       <div style={{ position: "sticky", top: 0, zIndex: 999 }}>
         <Middle />
